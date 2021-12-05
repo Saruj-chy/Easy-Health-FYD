@@ -22,21 +22,25 @@ Easy Health &amp; Find Your Doctor is related to finding your desired Doctor, Ne
 # Diagnostic Demonstration
 
 <p>
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_login.jpg" alt="login screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_reg_1.jpg" alt="register screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_reg_dialog.jpg" alt="register dialog">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_home_screen.jpg" alt="register dialog">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_login.jpg"  width="200" alt="login screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_reg_1.jpg"  width="200" alt="register screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_reg_dialog.jpg"  width="200" alt="register dialog">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_home_screen.jpg"  width="200" alt="home screen">
 </p>
 
 # About
 
 <p>
-<img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/about.jpg" alt="about">
+<img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/about.jpg"  width="200" alt="about screen">
 </p>
 
 # Privacy & Policy
 
 <p>
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/privacy_policy.jpg" alt="privacy & policy screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/privacy_policy.jpg"  width="200" alt="privacy & policy screen">
 </p>
-https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/about.jpg
+
+### `Release Apk`
+
+. Release [1.0.0](https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release 1.0.0.apk?raw=true)
+. Release [1.0.1](https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release 1.0.1.apk?raw=true)
