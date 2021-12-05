@@ -7,16 +7,16 @@ Easy Health &amp; Find Your Doctor is related to finding your desired Doctor, Ne
 # User Demonstration
 
 <p>
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/splash.jpg" title="Splash Screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/check_screen.jpg" title="Screen Check">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_home_eng.jpg" alt="home screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/doctor_home_eng.jpg" alt="home screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/doc_diag_list.jpg" alt="doc screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_doc_list.jpg" alt="diag screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/nav_eng.jpg" alt="diag screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/favourite.jpg" alt="diag screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/settings.jpg" alt="diag screen">
-  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/logout.jpg" alt="diag screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/splash.jpg"   width="200" title="Splash Screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/check_screen.jpg"   width="200" title="Screen Check">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_home_eng.jpg"   width="200" alt="home screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/doctor_home_eng.jpg"   width="200" alt="home screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/doc_diag_list.jpg"   width="200" alt="doc screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_doc_list.jpg"   width="200" alt="diag screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/nav_eng.jpg"   width="200" alt="diag screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/favourite.jpg"   width="200" alt="diag screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/settings.jpg"   width="200" alt="diag screen">
+  <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/logout.jpg"   width="200" alt="diag screen">
 </p>
 
 # Diagnostic Demonstration
