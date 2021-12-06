@@ -44,7 +44,7 @@ Easy Health &amp; Find Your Doctor is related to finding your desired Doctor, Ne
 
 <p>
 
-Release <a href ="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release%201.0.0.apk?raw=true" > 1.0.0 </a>
+Release <a href ="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release%201.0.0.apk?raw=true" > 1.0.0 </a> <br/>
 Release <a href ="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release%201.0.1.apk?raw=true" > 1.0.1 </a>
 
 </p>
