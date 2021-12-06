@@ -19,7 +19,7 @@ Easy Health &amp; Find Your Doctor is related to finding your desired Doctor, Ne
   <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/logout.jpg"   width="200" alt="diag screen">
 </p>
 
-# Diagnostic Demonstration
+`Diagnostic Demonstration`
 
 <p>
   <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_login.jpg"  width="200" alt="login screen">
@@ -28,27 +28,28 @@ Easy Health &amp; Find Your Doctor is related to finding your desired Doctor, Ne
   <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/diag_home_screen.jpg"  width="200" alt="home screen">
 </p>
 
-# About
+`About`
 
 <p>
 <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/about.jpg"  width="200" alt="about screen">
 </p>
 
-# Privacy & Policy
+`Privacy & Policy`
 
 <p>
   <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/privacy_policy.jpg"  width="200" alt="privacy & policy screen">
 </p>
 
-### `Release Apk`
+`Release Apk`
 
 <p>
+
 Release [1.0.0](https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release%201.0.0.apk?raw=true)
 Release [1.0.1](https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release%201.0.1.apk?raw=true)
 
 </p>
 
-### `Play store Link`
+`Play store Link`
 
 <p>
   <a href ="https://play.google.com/store/apps/details?id=com.sd.spartan.easyhealth" > <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/googleplay.png"  width="50%" alt="privacy & policy screen"> 
