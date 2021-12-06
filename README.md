@@ -2,9 +2,9 @@
 
 Easy Health &amp; Find Your Doctor is related to finding your desired Doctor, Nearby dr., Doctor Search, Search your Doctor, BD Doctors, Amar Doctor, Health Bangladesh, etc. Such that, if you need any Doctor details like where does he seat, what is the serial number of the Doctor, what is the schedule of the Doctor, how many chambers he has, etc. We can provide through the app. You can search here by your Zilla / District as well as your Upazila /S ub-District by Doctor name and also by Doctor's Speciality. It will take care of your time.
 
-### `Apps Review`
+# Apps Review
 
-# User Demonstration
+`User Demonstration`
 
 <p>
   <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/splash.jpg"   width="200" title="Splash Screen">
@@ -44,11 +44,13 @@ Easy Health &amp; Find Your Doctor is related to finding your desired Doctor, Ne
 
 <p>
 Release [1.0.0](https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release%201.0.0.apk?raw=true)
-
 Release [1.0.1](https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/ReleaseApk/release%201.0.1.apk?raw=true)
 
 </p>
 
 ### `Play store Link`
 
-https://play.google.com/store/apps/details?id=com.sd.spartan.easyhealth
+<p>
+  <a href ="https://play.google.com/store/apps/details?id=com.sd.spartan.easyhealth" > <img src="https://github.com/Saruj-chy/Easy-Health-FYD/blob/main/App%20Review/googleplay.png"  width="50%" alt="privacy & policy screen"> 
+  </a>
+</p>
