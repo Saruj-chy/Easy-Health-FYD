@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        android:elevation="@dimen/dimen_4"
+        app:cardCornerRadius="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constraint_doc_details"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintTop_toTopOf="parent"
+                   >
+                   <LinearLayout
+                       android:id="@+id/linear_doc_name"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+
+                       android:layout_marginTop="@dimen/dimen_10"
+                       android:layout_marginRight="@dimen/dimen_50"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       android:layout_marginEnd="@dimen/dimen_50">
+                       <TextView
+                           android:id="@+id/text_doc_name_layout"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:text="@string/doc_name_eng"
+                           android:textColor="?attr/colorPrimary"
+                           android:textSize="@dimen/dimen_16"
+                           android:textStyle="bold"
+                           android:gravity="start"
+                           android:paddingHorizontal="@dimen/dimen_10"
+                           android:layout_weight="1"
+                           />
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:id="@+id/text_doc_degree_layout"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:paddingVertical="@dimen/dimen_5"
+                       android:text="@string/doc_deg"
+                       android:textColor="?attr/colorOnPrimarySurface"
+                       android:textSize="@dimen/dimen_12"
+                       android:paddingLeft="@dimen/dimen_14"
+                       android:layout_marginRight="@dimen/dimen_50"
+                       app:layout_constraintTop_toBottomOf="@+id/linear_doc_name"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       android:paddingStart="@dimen/dimen_14"
+                       android:layout_marginEnd="@dimen/dimen_50"
+                       tools:ignore="RtlSymmetry" />
+                   <TextView
+                       android:id="@+id/text_doc_time_layout"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/time_to_eng"
+                       android:textColor="?attr/colorOnPrimarySurface"
+                       android:textSize="@dimen/dimen_12"
+                       android:paddingHorizontal="@dimen/dimen_14"
+                       app:layout_constraintTop_toBottomOf="@+id/text_doc_degree_layout"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+               <LinearLayout
+                   android:id="@+id/linear_favourite"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/favourite_bg"
+                   android:paddingHorizontal="@dimen/dimen_5"
+                   android:paddingVertical="@dimen/dimen_10"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   >
+                   <ImageButton
+                       android:id="@+id/img_favorite_border"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:paddingHorizontal="@dimen/dimen_10"
+                       android:src="@drawable/ic_favorite_border"
+                       android:background="@android:color/transparent"
+                       tools:ignore="ContentDescription" />
+                   <ImageButton
+                       android:id="@+id/img_favorite_fillup"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:paddingHorizontal="10dp"
+                       android:src="@drawable/ic_favorite_fillup"
+                       android:background="@android:color/transparent"
+                       android:visibility="gone"
+                       tools:ignore="ContentDescription" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/linear_doc_serial"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:paddingVertical="@dimen/dimen_5"
+                   android:paddingHorizontal="@dimen/dimen_10"
+                   app:layout_constraintTop_toBottomOf="@+id/constraint_doc_details"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+
+                   >
+                   <TextView
+                       android:id="@+id/text_doc_serial_layout"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="@string/serial"
+                       android:textColor="?attr/colorOnPrimarySurface"
+                       android:textSize="@dimen/dimen_12"
+                       android:gravity="center"
+                       android:layout_marginRight="@dimen/dimen_20"
+                       android:layout_marginEnd="@dimen/dimen_20" />
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/recycler_doc_serial_layout"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/linear_visit_fee_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:paddingVertical="@dimen/dimen_5"
+                   android:visibility="gone"
+                   android:layout_marginHorizontal="@dimen/dimen_10"
+                   app:layout_constraintTop_toBottomOf="@+id/linear_doc_serial"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+
+                   >
+                   <TextView
+                       android:id="@+id/text_visit_fee_name_layout"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="@string/visit"
+                       android:textColor="?attr/colorOnPrimarySurface"
+                       android:textSize="@dimen/dimen_12"
+                       android:gravity="center"
+
+                       />
+                   <TextView
+                       android:id="@+id/text_visit_fee_layout"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="@string/taka"
+                       android:textSize="@dimen/dimen_14"
+                       android:textStyle="bold"
+                       android:paddingHorizontal="@dimen/dimen_20"
+                       android:paddingVertical="@dimen/dimen_5"
+                       android:textColor="?attr/colorPrimary"
+                       android:background="@drawable/border_input"
+                       android:layout_marginHorizontal="@dimen/dimen_10"
+                       />
+
+
+               </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/linear_doc_cmnt_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:paddingVertical="@dimen/dimen_5"
+                   android:visibility="gone"
+                   android:layout_marginHorizontal="@dimen/dimen_10"
+                   app:layout_constraintTop_toBottomOf="@+id/linear_visit_fee_layout"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+
+                   >
+                   <TextView
+                       android:id="@+id/text_doc_cmnt_name_layout"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="@string/cmnt_eng"
+                       android:textColor="?attr/colorOnPrimarySurface"
+                       android:textSize="@dimen/dimen_12"
+                       android:gravity="center"
+
+                       />
+                   <TextView
+                       android:id="@+id/text_doc_cmnt_layout"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="@string/cmnt_eng"
+                       android:textSize="@dimen/dimen_14"
+                       android:textColor="?attr/colorOnPrimarySurface"
+
+                       android:layout_marginHorizontal="@dimen/dimen_10"
+                       />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/linear_website"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/dimen_5"
+                   android:layout_marginHorizontal="@dimen/dimen_10"
+                   android:layout_below="@+id/linear_doc_serial"
+                   app:layout_constraintTop_toBottomOf="@+id/linear_doc_cmnt_layout"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   android:orientation="vertical">
+                   <TextView
+                       android:id="@+id/text_website_pro"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/visit"
+                       android:textSize="@dimen/dimen_12"
+                       android:textStyle="bold"
+                       android:paddingRight="@dimen/dimen_10"
+                       android:layout_marginVertical="@dimen/dimen_5"
+                       android:textColor="?attr/colorOnPrimarySurface"
+                       android:paddingEnd="@dimen/dimen_10"
+                       tools:ignore="RtlSymmetry" />
+
+                   <TextView
+                       android:id="@+id/text_website_link_pro"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:singleLine="true"
+                       android:text="@string/prefix_http"
+                       android:textSize="@dimen/dimen_16"
+                       android:textStyle="bold"
+                       android:layout_marginHorizontal="@dimen/dimen_10"
+                       android:paddingHorizontal="@dimen/dimen_10"
+                       android:paddingVertical="@dimen/dimen_5"
+                       android:textColor="?attr/colorPrimary"
+                       android:background="@drawable/border_input"
+                       android:layout_marginBottom="@dimen/dimen_5"
+                       />
+
+
+               </LinearLayout>
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constraint_spe_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintTop_toBottomOf="@+id/linear_website"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent">
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:id="@+id/constraint_spe"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/dimen_15"
+                       android:background="@drawable/doc_spe_bg"
+                       app:layout_constraintTop_toTopOf="parent">
+
+                       <androidx.recyclerview.widget.RecyclerView
+                           android:id="@+id/recycler_doc_spe_layout"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical"
+                           android:layout_gravity="center_horizontal"
+                           app:layout_constraintTop_toTopOf="parent"
+                           android:paddingHorizontal="@dimen/dimen_30"
+                           android:paddingVertical="@dimen/dimen_15"
+                           />
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+                   <TextView
+                       android:id="@+id/text_doc_spe_layout"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/specialist"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/dimen_12"
+                       android:paddingHorizontal="@dimen/dimen_20"
+                       android:paddingVertical="@dimen/dimen_5"
+                       android:background="@drawable/around_bg"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       />
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+               <TextView
+                   android:id="@+id/text_doc_present"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingVertical="@dimen/dimen_5"
+                   android:text="@string/doc_not_avail"
+                   android:textColor="@color/red"
+                   android:textSize="@dimen/dimen_12"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:background="@drawable/bg_input_white"
+                   android:layout_marginVertical="@dimen/dimen_5"
+                   android:layout_marginHorizontal="@dimen/dimen_5"
+                   android:paddingHorizontal="@dimen/dimen_30"
+                   app:layout_constraintTop_toBottomOf="@+id/constraint_spe_layout"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_30"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_35"
+            android:paddingTop="@dimen/dimen_50"
+            android:paddingHorizontal="@dimen/dimen_10"
+            android:background="@drawable/border_input"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <TextView
+                android:id="@+id/text_update_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_version"
+                android:textSize="@dimen/dimen_20"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnPrimary"
+                android:background="@drawable/btn_radius"
+                android:paddingVertical="@dimen/dimen_5"
+                android:paddingHorizontal="@dimen/dimen_20"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <TextView
+                android:id="@+id/text_update_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_msg"
+                android:textColor="?attr/colorOnPrimarySurface"
+                android:textSize="@dimen/dimen_18"
+                android:paddingVertical="@dimen/dimen_10"
+                android:paddingHorizontal="@dimen/dimen_10"
+
+                app:layout_constraintTop_toBottomOf="@+id/text_update_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+
+                android:paddingVertical="@dimen/dimen_20"
+                app:layout_constraintTop_toBottomOf="@+id/text_update_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/text_update_now"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_now"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_18"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:background="@drawable/btn_radius"
+                    android:paddingHorizontal="@dimen/dimen_20"
+                    android:paddingVertical="@dimen/dimen_5" />
+
+                <TextView
+                    android:id="@+id/text_remind_later"
+                    android:layout_width="@dimen/dimen_170"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remind_me_later"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_18"
+                    android:background="@drawable/border_input"
+                    android:layout_marginVertical="@dimen/dimen_5"
+                    android:paddingVertical="@dimen/dimen_5" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/circle_oval_green"
+            >
+            <ImageView
+                android:layout_width="@dimen/dimen_65"
+                android:layout_height="@dimen/dimen_65"
+                android:src="@drawable/ic_celebration"
+                android:padding="@dimen/dimen_15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

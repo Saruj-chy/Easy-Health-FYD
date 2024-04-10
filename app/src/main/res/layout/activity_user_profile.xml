@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserProfileActivity">
+
+    <include
+        android:id="@+id/appbar_user_profile"
+        layout="@layout/app_bar_layout"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_user_pro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_user_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:id="@+id/relative_user_fullview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/dimen_20"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle_diag_logo"
+                        android:layout_width="@dimen/dimen_90"
+                        android:layout_height="@dimen/dimen_90"
+                        android:src="@drawable/easy_health_logo"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:id="@+id/linear_divide_frag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/dimen_30"
+                    android:gravity="center"
+                    android:background="@drawable/solid_edit_bg"
+                    android:layout_below="@+id/constraint_profile"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/text_update_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_details"
+                        android:textSize="@dimen/dimen_20"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_15"
+
+                        />
+
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_rv_gradient"
+                    android:layout_below="@+id/constraint_profile"
+
+                    android:layout_marginTop="@dimen/dimen_42"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraint_sup_pro"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone"
+                                android:background="@drawable/bg_radius_white"
+                                android:layout_margin="@dimen/dimen_20"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent">
+
+                                <LinearLayout
+                                    android:id="@+id/linear_favourite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/favourite_bg"
+                                    android:paddingHorizontal="@dimen/dimen_5"
+                                    android:paddingVertical="@dimen/dimen_10"
+
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    >
+                                    <ImageButton
+                                        android:id="@+id/img_edit_btn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:paddingHorizontal="@dimen/dimen_10"
+                                        android:src="@drawable/ic_edit"
+                                        android:background="@android:color/transparent"
+                                        android:onClick="onEditClick"
+
+                                        tools:ignore="ContentDescription,TooDeepLayout,UsingOnClickInXml" />
+                                    <ImageButton
+                                        android:id="@+id/img_editbtn_cancel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone"
+                                        android:paddingHorizontal="@dimen/dimen_10"
+                                        android:src="@drawable/ic_cancel_primary"
+                                        android:background="@android:color/transparent"
+                                        android:onClick="onCancelClick"
+                                        tools:ignore="ContentDescription,UsingOnClickInXml" />
+
+                                </LinearLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraint_user_profile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:paddingHorizontal="@dimen/dimen_10"
+                                    android:paddingVertical="@dimen/dimen_20"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent">
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_user_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        >
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            >
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/user_name"
+                                                android:textSize="@dimen/dimen_20"
+                                                android:textColor="?attr/colorPrimary"
+                                                android:textStyle="bold"
+                                                android:padding="@dimen/dimen_5"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                 />
+                                            <TextView
+                                                android:id="@+id/text_change_password"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:onClick="onChangePassword"
+                                                android:orientation="vertical"
+                                                android:text="@string/change_pass"
+                                                android:layout_centerInParent="true"
+                                                android:textSize="@dimen/dimen_10"
+                                                android:paddingVertical="@dimen/dimen_3"
+                                                android:paddingHorizontal="@dimen/dimen_14"
+                                                android:textStyle="bold"
+                                                android:textColor="?attr/colorPrimary"
+                                                android:background="@drawable/btn_radius_white"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                tools:ignore="UsingOnClickInXml" />
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                        <TextView
+                                            android:id="@+id/text_user_name_pro"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/dimen_14"
+                                            android:paddingHorizontal="@dimen/dimen_20"
+                                            />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_user_phnnum_pro"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_user_name"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/phn_num"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:padding="@dimen/dimen_5"
+                                            />
+                                        <TextView
+                                            android:id="@+id/text_user_contact_pro"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/dimen_14"
+                                            android:paddingHorizontal="@dimen/dimen_20"
+                                            />
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/linear_user_email_pro"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_user_phnnum_pro"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/email"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:padding="@dimen/dimen_5"
+                                            />
+                                        <TextView
+                                            android:id="@+id/text_user_email_pro"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/dimen_14"
+                                            android:paddingHorizontal="@dimen/dimen_20"
+                                            />
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/linear_user_address_pro"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_user_email_pro"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/address_eng"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:padding="@dimen/dimen_5"
+                                            />
+                                        <TextView
+                                            android:id="@+id/text_user_address_pro"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/dimen_14"
+                                            android:paddingHorizontal="@dimen/dimen_20"
+                                            />
+
+
+                                    </LinearLayout>
+
+
+
+
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraint_user_profile_edit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:paddingHorizontal="@dimen/dimen_10"
+                                    android:paddingVertical="@dimen/dimen_20"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent">
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_user_name_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/user_name"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:padding="@dimen/dimen_10"
+                                            />
+                                        <EditText
+                                            android:id="@+id/edit_user_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/dimen_18"
+                                            android:paddingHorizontal="@dimen/dimen_10"
+                                            tools:ignore="Autofill,LabelFor,TextFields" />
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/linear_user_phnnum_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_user_name_edit"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/phn_num"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:padding="@dimen/dimen_10"
+                                            />
+                                        <EditText
+                                            android:id="@+id/edit_user_phnnum"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/dimen_18"
+                                            android:paddingHorizontal="@dimen/dimen_10"
+                                            android:inputType="number"
+                                            tools:ignore="Autofill,LabelFor" />
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/linear_user_email_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_user_phnnum_edit"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/email"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+                                            android:padding="@dimen/dimen_10"
+                                            />
+                                        <EditText
+                                            android:id="@+id/edit_user_email"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="textEmailAddress"
+                                            android:textSize="@dimen/dimen_18"
+                                            android:paddingHorizontal="@dimen/dimen_10"
+                                            tools:ignore="Autofill,LabelFor" />
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/text_btn_saved"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/update"
+                                        android:textColor="?attr/colorOnPrimary"
+                                        android:textSize="@dimen/dimen_20"
+                                        android:paddingHorizontal="@dimen/dimen_30"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        android:layout_marginVertical="@dimen/dimen_10"
+                                        android:background="@drawable/btn_radius"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_user_email_edit"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:onClick="OnUpdateUserProfile"
+
+                                        tools:ignore="UsingOnClickInXml" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraint_user_change_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:paddingHorizontal="@dimen/dimen_10"
+                                    android:paddingVertical="@dimen/dimen_20"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent">
+
+                                    <LinearLayout
+                                        android:id="@+id/linear_change_old_password"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/current_pass"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+
+                                            />
+                                        <EditText
+                                            android:id="@+id/edit_old_password"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="textPassword"
+                                            android:textSize="@dimen/dimen_18"
+                                            android:paddingHorizontal="@dimen/dimen_10"
+                                            tools:ignore="Autofill,LabelFor" />
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/linear_change_new_password"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_change_old_password"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/new_pass"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+
+                                            />
+                                        <EditText
+                                            android:id="@+id/edit_new_password"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="textPassword"
+                                            android:textSize="@dimen/dimen_18"
+                                            android:paddingHorizontal="@dimen/dimen_10"
+                                            tools:ignore="Autofill,LabelFor" />
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/linear_change_confirm_password"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingVertical="@dimen/dimen_5"
+                                        android:orientation="vertical"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_change_new_password"
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/confirm_pass"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:textColor="?attr/colorPrimary"
+                                            android:textStyle="bold"
+                                            />
+                                        <EditText
+                                            android:id="@+id/edit_confirm_password"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="textPassword"
+                                            android:textSize="@dimen/dimen_18"
+                                            android:paddingHorizontal="@dimen/dimen_10"
+                                            tools:ignore="Autofill,LabelFor" />
+
+
+                                    </LinearLayout>
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        app:layout_constraintTop_toBottomOf="@+id/linear_change_confirm_password"
+
+                                        >
+
+                                        <TextView
+                                            android:id="@+id/text_forget_password"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/forget_pass_q"
+                                            android:onClick="onForgetPasswordClick"
+                                            android:textColor="?attr/colorOnPrimarySurface"
+                                            android:textSize="@dimen/dimen_14"
+                                            android:textStyle="bold"
+                                            android:paddingVertical="@dimen/dimen_5"
+                                            android:paddingHorizontal="@dimen/dimen_10"
+                                            android:layout_marginVertical="@dimen/dimen_10"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+
+                                            tools:ignore="UsingOnClickInXml" />
+                                        <TextView
+                                            android:id="@+id/text_btn_change_password"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:onClick="onNewPasswordChange"
+                                            android:text="@string/change"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="@dimen/dimen_20"
+                                            android:paddingHorizontal="@dimen/dimen_30"
+                                            android:paddingVertical="@dimen/dimen_5"
+                                            android:layout_marginVertical="@dimen/dimen_10"
+                                            android:background="@drawable/btn_radius"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+
+                                            tools:ignore="UsingOnClickInXml" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraint_email_verify"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingVertical="@dimen/dimen_20"
+                                    android:visibility="gone"
+                                    android:layout_marginTop="@dimen/dimen_50"
+
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/text_pass"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_30"
+                                        android:gravity="start"
+                                        android:paddingHorizontal="@dimen/dimen_10"
+                                        android:text="@string/for_sent_pass_email"
+                                        android:textColor="?attr/colorPrimary"
+                                        android:textSize="@dimen/dimen_16"
+                                        android:textStyle="bold"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/text_phn_num_verify"
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dimen_20"
+                                        android:layout_marginRight="@dimen/dimen_10"
+                                        android:hint="@string/enter_phn_num"
+                                        app:layout_constraintTop_toBottomOf="@+id/text_pass"
+                                        android:layout_marginStart="@dimen/dimen_20"
+                                        android:layout_marginEnd="@dimen/dimen_10">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/edit_phn_num_verify"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:singleLine="true"
+                                            android:inputType="number"
+                                            />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen_0"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_marginHorizontal="@dimen/dimen_5"
+                                        android:layout_marginTop="@dimen/dimen_50"
+                                        android:orientation="horizontal"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/text_phn_num_verify"
+                                        tools:layout_editor_absoluteX="5dp">
+
+
+
+                                        <TextView
+                                            android:id="@+id/text_email_sent"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="10dp"
+                                            android:background="@drawable/btn_radius"
+                                            android:gravity="center"
+                                            android:onClick="onEmailVerifyClick"
+
+                                            android:paddingVertical="@dimen/dimen_10"
+                                            android:text="@string/sent"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="@dimen/dimen_20"
+                                            tools:ignore="UsingOnClickInXml" />
+                                    </RelativeLayout>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </RelativeLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

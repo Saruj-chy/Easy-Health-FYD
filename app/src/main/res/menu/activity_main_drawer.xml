@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home_ban" />
+        <item
+            android:id="@+id/menu_user_profile"
+            android:icon="@drawable/ic_person_add"
+            android:title="@string/menu_profile_ban"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/menu_district"
+            android:icon="@drawable/ic_location"
+            android:title="@string/menu_district_ban" />
+        <item
+            android:id="@+id/menu_subdistrict"
+            android:icon="@drawable/ic_location"
+            android:title="@string/menu_subdistrict_ban"
+            android:visible="false"
+            />
+
+
+        <item
+            android:id="@+id/menu_favorite"
+            android:icon="@drawable/ic_favorite_fillup"
+            android:title="@string/menu_favourite_ban" />
+        <item
+            android:id="@+id/menu_user_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_settings_ban"
+            />
+        <item
+            android:id="@+id/menu_tutorials"
+            android:icon="@drawable/ic_video_cam"
+            android:title="@string/menu_tutorials_ban"
+            />
+        <item
+            android:id="@+id/menu_message"
+            android:icon="@drawable/ic_message"
+            android:title="Message"
+
+            />
+        <item
+            android:id="@+id/menu_donate"
+            android:icon="@drawable/ic_spa"
+            android:title="Donate Us"
+
+            />
+        <item
+            android:id="@+id/menu_combine_doc"
+            android:icon="@drawable/ic_person_add"
+            android:title="Combine Doctor"
+            android:visible="false"
+
+            />
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_about_eng" />
+        <item
+            android:id="@+id/menu_privacy"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/menu_privacy_eng" />
+        <item
+            android:id="@+id/menu_rate_us"
+            android:icon="@drawable/ic_star"
+            android:title="@string/menu_rating_eng"
+            />
+        <item
+            android:id="@+id/menu_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/menu_share_eng"
+            />
+
+
+
+
+
+
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout_eng"
+            />
+    </group>
+</menu>

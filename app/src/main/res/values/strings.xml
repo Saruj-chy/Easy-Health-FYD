@@ -1,0 +1,245 @@
+<resources>
+    <string name="app_name">Easy Health</string>
+    <string name="action_notify">Notifications</string>
+
+
+    <string name="prj_code_name">prj_code</string>
+    <string name="prj_code">123456789</string>
+    <string name="youtube_api_key">xyz</string>
+    <string name="ip_address">https://example.com/</string>
+    <string name="menu_home_eng">Home</string>
+    <string name="menu_profile_eng">Profile</string>
+    <string name="menu_district_eng">District</string>
+    <string name="menu_subdistrict_eng">Sub-District</string>
+    <string name="menu_favourite_eng">Favourite</string>
+    <string name="menu_settings_eng">Settings</string>
+    <string name="menu_tutorials_eng">Tutorials</string>
+    <string name="menu_about_eng">About</string>
+    <string name="menu_privacy_eng">Privacy and Policy</string>
+    <string name="menu_rating_eng">Rating</string>
+    <string name="menu_share_eng">Share</string>
+    <string name="menu_logout_eng">LogOut</string>
+    <string name="terms_condition">Terms and Conditions</string>
+    <string name="donate_us">Donate Us</string>
+    <string name="reply">1 reply</string>
+
+    <string name="menu_home_ban">হোম</string>
+    <string name="menu_profile_ban">প্রোফাইল</string>
+    <string name="menu_district_ban">জেলা ভিত্তিক</string>
+    <string name="menu_subdistrict_ban">উপজেলা ভিত্তিক</string>
+    <string name="menu_favourite_ban">ফেভারিট</string>
+    <string name="menu_settings_ban"> সেটিংস</string>
+    <string name="menu_tutorials_ban"> টিউটোরিয়াল </string>
+    <!--    <string name="menu_about_ban">অ্যাবাইড</string>-->
+    <!--    <string name="menu_privacy_ban">প্রাইভেসি এবং পলিসি</string>-->
+    <!--    <string name="menu_rating_ban">রেটিং</string>-->
+    <!--    <string name="menu_share_ban">শেয়ার</string>-->
+    <!--    <string name="menu_logout_ban">লগআউট</string>-->
+
+
+    <string name="net_error_eng">          No internet \n please Refresh the page</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="rb_english">EN</string>
+    <string name="rb_bangla">BN</string>
+    <string name="rb_light">Light</string>
+    <string name="rb_dark">Dark</string>
+
+
+    <string-array name="weeks_eng">
+        <item> Sun </item>
+        <item> Mon </item>
+        <item> Tue </item>
+        <item> Wed </item>
+        <item> Thu </item>
+        <item> Fri </item>
+        <item> Sat </item>
+    </string-array>
+    <string-array name="weeks_ban">
+        <item> রবি </item>
+        <item> সোম </item>
+        <item> মঙ্গল </item>
+        <item> বুধ </item>
+        <item> বৃহঃ </item>
+        <item> শুক্র </item>
+        <item> শনি </item>
+    </string-array>
+
+    <string-array name="months_ban">
+        <item> ১ম </item>
+        <item> ২য় </item>
+        <item> ৩য় </item>
+        <item> ৪র্থ </item>
+    </string-array>
+    <string-array name="months_eng">
+        <item> 1st </item>
+        <item> 2nd </item>
+        <item> 3rd </item>
+        <item> 4th </item>
+    </string-array>
+
+
+    <string-array name="time_eng">
+        <item> AM </item>
+        <item> PM </item>
+    </string-array>
+    <string-array name="time_ban">
+        <item> সকাল </item>
+        <item> দুপুর </item>
+        <item> বিকাল </item>
+        <item> সন্ধ্যা </item>
+        <item> রাত </item>
+    </string-array>
+
+
+    <string name="diag_name_title">diagnostic name</string>
+    <string name="diag_profile">Diagnostic Profile</string>
+    <string name="doc_profile">Doctor Profile</string>
+    <string name="favourite">Favourite</string>
+    <string name="insert_doctor">Insert Doctor</string>
+    <string name="message">Message</string>
+    <string name="my_profile">My Profile</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Settings</string>
+    <string name="tutorials_list">Tutorials List</string>
+    <string name="doc_pro_update">Doctor\'s Profile Update</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="pass_change">Password Change</string>
+    <string name="forget_pass">Forget Password</string>
+    <string name="user_name">User Name </string>
+    <string name="change_pass">change password</string>
+    <string name="current_pass">Current Password </string>
+    <string name="new_pass">New Password </string>
+    <string name="confirm_pass">Confirm Password </string>
+    <string name="phn_num">Phone Number </string>
+    <string name="personal_contact_no">Personal Contact No </string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="address_eng">Address</string>
+    <string name="address_ban"> ঠিকানা </string>
+    <string name="change">Change</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="remind_me_later">Remind me Later</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="update_version">Update Version</string>
+    <string name="update_now">Update Now</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">DisAgree</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="lan">Language</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="update">Update</string>
+    <string name="mode">Mode</string>
+    <string name="work">WORK</string>
+    <string name="taka">100$</string>
+
+    <string name="general_inform">General Information</string>
+    <string name="prefix_doc_eng">Doctor </string>
+    <string name="prefix_doc_ban">ডাক্তার </string>
+    <string name="prefix_http">https://</string>
+    <string name="edu_quali_eng">Educational Qualifications (English)</string>
+    <string name="edu_quali_ban">শিক্ষাগত যোগ্যতা (বাংলা)</string>
+    <string name="spe_disease_eng">Specialist which disease(English)</string>
+    <string name="spe_disease_ban">যে রোগের বিশেষজ্ঞ(বাংলা)</string>
+    <string name="work_place_eng">Work Place </string>
+    <string name="work_place_ban">কর্মস্থান </string>
+    <string name="search">Search</string>
+    <string name="serial">Serial</string>
+    <string name="serial_eng">Serial: </string>
+    <string name="serial_ban">যোগাযোগ: </string>
+    <string name="visit">visit </string>
+    <string name="specialist">Specialist </string>
+    <string name="diag_address">Diagnostic Address</string>
+    <string name="doc_deg">Doctor Degree</string>
+    <string name="add_new">Add New</string>
+    <string name="diag_work_time">Diagnostic work time </string>
+
+    <string name="enter_doc_num">Enter add doctor number</string>
+    <string name="add">ADD</string>
+    <string name="insert">Insert</string>
+    <string name="welcome">Welcome</string>
+    <string name="login_to_continue">Login to Continue</string>
+    <string name="reg_to_continue">Registration to Continue</string>
+    <string name="doc_time_details_eng"> Added doctor time Schedule </string>
+    <string name="doc_time_details_ban"> ডাক্তারের বসার সময় </string>
+    <string name="every_month_eng">Every Month </string>
+    <string name="every_month_ban">প্রতি মাসে </string>
+    <string name="added_extra_times_eng"> Added Extra times </string>
+    <string name="added_extra_times_ban"> বাড়তি সময় </string>
+    <string name="working_time">Working Time</string>
+    <string name="time_from_eng">TimeFrom(English)</string>
+    <string name="time_from_ban">TimeFrom(Bangla)</string>
+    <string name="time_to_eng">TimeTo(English)</string>
+    <string name="time_to_ban">TimeTo(Bangla)</string>
+    <string name="to_eng">To</string>
+    <string name="to_ban">হতে</string>
+    <string name="doc_ser_num_eng">Doctor\'s Serial number(English)</string>
+    <string name="doc_ser_num_ban">ডাক্তারের সিরিয়াল নাম্বার(বাংলা)</string>
+    <string name="enter_doc_web">Enter your Doctor Website</string>
+    <string name="enter_doc_visit_fee">Enter your Doctor visit fee</string>
+    <string name="enter_ser_num_eng">Enter your all Serial No.</string>
+    <string name="enter_ser_num_ban">আপনার যোগাযোগ নাম্বারগুলো দিন</string>
+    <string name="password">Password</string>
+    <string name="cmnt_eng">Comment…</string>
+    <string name="cmnt_ban">মন্তব্য…</string>
+    <string name="doc_avail">Is the doctor available</string>
+    <string name="doc_not_avail">Doctor is not available</string>
+    <string name="doc_1">Doctor 1</string>
+    <string name="doc_code">Doctor Code</string>
+    <string name="doc_time">Doctor time </string>
+    <string name="notify_title">Notify Title</string>
+    <string name="notify_msg">Notification msg </string>
+    <string name="youtube_title">Youtube title</string>
+    <string name="youtube_details">Youtube details</string>
+
+    <string name="enter_username">Enter your Username</string>
+    <string name="enter_pass">Enter your password</string>
+    <string name="enter_confirm_pass">Enter your confirm password</string>
+    <string name="enter_email">Enter your Email</string>
+    <string name="enter_email_optional">Enter your Email(optional)</string>
+    <string name="enter_phn_num">Enter your phone number</string>
+    <string name="type_phn_num">Type your phone number(01***********)</string>
+    <string name="enter_contact_num">Enter your Contact number</string>
+    <string name="enter_diag_name_eng">Enter Diagnostic name(English)</string>
+    <string name="enter_diag_name_ban">Enter Diagnostic name(Bangla)</string>
+    <string name="enter_diag_add_eng">Enter Diagnostic address(English)</string>
+    <string name="enter_diag_add_ban">Enter Diagnostic address(Bangla)</string>
+    <string name="enter_doc_code">Enter Doctor code</string>
+    <string name="enter_doc_name">Enter Doctor name(Bangla)</string>
+    <string name="enter_spe_name">Enter Specialist name(Bangla)</string>
+    <string name="enter_website">Enter your website </string>
+    <string name="doc_name_eng">Doctor\'s name (English)</string>
+    <string name="doc_name_ban">ডাক্তারের নাম (বাংলা)</string>
+
+    <string name="sel_div_name">Select Division Name</string>
+    <string name="sel_dis_name">Select District Name</string>
+    <string name="sel_sub_dis_name">Select Sub-District Name</string>
+
+    <string name="create_account">Create a new Account ?</string>
+    <string name="forget_pass_q">forget password ?</string>
+    <string name="already_acc">Already have an Account ?</string>
+    <string name="login">Login</string>
+    <string name="sent">Sent</string>
+    <string name="registration">Registration</string>
+    <string name="no_notify">No Notification</string>
+    <string name="login_as_user">Login As a User</string>
+    <string name="login_as_diag_admin">Login As a Diagnostic Admin</string>
+    <string name="reg_explore_more">Register to explore more</string>
+    <string name="for_sent_pass_email">For sending password in your email— </string>
+    <string name="contact_you_ban">আপনার সাথে খুব শীঘ্রই \n যোগাযোগ করা হবে </string>
+    <string name="doc_pro_update_ban">আপনার ডাক্তার প্রোফাইল আপডেট করুন </string>
+    <string name="ser_for_visit">সিরিয়ালের জন্য ভিজিট করুন  </string>
+    <string name="search_category">Search your category</string>
+    <string name="logout_msg">Are you sure you want \n to logout from the App?</string>
+    <string name="want_to_del">Do you want to delete</string>
+    <string name="update_msg">Update version is available!  Please update your version</string>
+    <string name="rate_msg">If you are enjoying the App, Please take a moment to rate it on Playstore. Thanks for your support</string>
+    <string name="advance_search">Advance\nSearch</string>
+
+
+</resources>

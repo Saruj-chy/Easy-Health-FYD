@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary_1"
+    tools:context=".activity.LoginDiagnosticActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <RelativeLayout
+            android:id="@+id/relative_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_30"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_login"
+            >
+
+            <ImageView
+                android:id="@+id/img_doc_login"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_90"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/easy_health_logo"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+            <TextView
+                android:id="@+id/text_wel_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_25"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/img_doc_login"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/login_to_continue"
+                android:paddingHorizontal="@dimen/dimen_30"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_23"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/text_wel_login"
+                app:drawableEndCompat="@drawable/ic_arrow_forward" />
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_stoke"
+            android:paddingVertical="@dimen/dimen_20"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_username_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enter_username"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_diag_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_contact_phone"
+                    android:drawableTint="?attr/colorPrimary"
+                    android:singleLine="true"
+                    android:drawableEnd="@drawable/ic_contact_phone"
+                    tools:targetApi="m" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_password_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_btn"
+                android:layout_marginHorizontal="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/enter_pass"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="?attr/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/text_username_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_diag_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:paddingBottom="@dimen/dimen_50"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_password_layout"
+                tools:layout_editor_absoluteX="@dimen/dimen_5">
+
+                <TextView
+                    android:id="@+id/text_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="end"
+                    android:onClick="onRegDiagClick"
+                    android:paddingHorizontal="@dimen/dimen_20"
+                    android:paddingVertical="@dimen/dimen_5"
+                    android:text="@string/create_account"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/dimen_16"
+                    tools:ignore="UsingOnClickInXml" />
+
+                <TextView
+                    android:id="@+id/text_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_reg"
+                    android:layout_marginHorizontal="@dimen/dimen_10"
+                    android:background="@drawable/btn_radius"
+                    android:gravity="center"
+                    android:onClick="onLoginDiagClick"
+                    android:paddingVertical="@dimen/dimen_10"
+                    android:text="@string/login"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="@dimen/dimen_20"
+                    tools:ignore="UsingOnClickInXml" />
+
+                <TextView
+                    android:id="@+id/text_forget_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/text_login"
+                    android:gravity="start"
+                    android:onClick="OnForgetPassClick"
+                    android:paddingHorizontal="@dimen/dimen_20"
+                    android:paddingVertical="@dimen/dimen_5"
+                    android:text="@string/forget_pass_q"
+                    android:textColor="?attr/colorPrimary"
+
+                    android:textSize="@dimen/dimen_16"
+                    tools:ignore="UsingOnClickInXml" />
+
+
+
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/text_forget_pass_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingHorizontal="@dimen/dimen_20"
+                android:paddingVertical="@dimen/dimen_5"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/dimen_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_email_verify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0"
+            android:background="@drawable/solid_stoke"
+            android:paddingVertical="@dimen/dimen_20"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative_login">
+
+            <TextView
+                android:id="@+id/text_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/dimen_30"
+                android:gravity="start"
+                android:paddingHorizontal="10dp"
+                android:text="@string/for_sent_pass_email"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_user_name_verify"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:hint="@string/enter_username"
+                app:layout_constraintTop_toBottomOf="@+id/text_pass"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:layout_marginEnd="@dimen/dimen_10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_user_name_verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:hint="@string/enter_email"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/text_user_name_verify"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_email"
+                tools:layout_editor_absoluteX="5dp">
+
+
+                <TextView
+                    android:id="@+id/text_email_sent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_10"
+                    android:background="@drawable/btn_radius"
+                    android:gravity="center"
+                    android:onClick="onEmailVerifyClick"
+
+                    android:paddingVertical="@dimen/dimen_10"
+                    android:text="@string/sent"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="@dimen/dimen_20"
+                    tools:ignore="UsingOnClickInXml" />
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

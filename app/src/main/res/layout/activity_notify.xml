@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NotifyActivity">
+
+    <include
+        android:id="@+id/appbar_notify_diag"
+        layout="@layout/app_bar_layout"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_notify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+
+        app:layout_constraintTop_toBottomOf="@+id/appbar_notify_diag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_notify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_notify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_notify_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="@string/no_notify"
+                android:textSize="@dimen/dimen_20"
+                android:textColor="@color/white"
+                android:paddingVertical="@dimen/dimen_30"
+                android:paddingHorizontal="@dimen/dimen_30"
+                android:background="@drawable/solid_bg_contact"
+
+
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

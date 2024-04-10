@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/appbar_main_doc_diag"
+        layout="@layout/app_bar_layout"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_district_doc_diag"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_main_doc_diag"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_district"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relative_district"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <com.av.smoothviewpager.Smoolider.SmoothViewpager
+                    android:id="@+id/smooth_banner_frag"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_250"
+                    android:visibility="gone"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_marginEnd="@dimen/dimen_0"
+                    android:layout_marginRight="@dimen/dimen_0" />
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_below="@+id/smooth_banner_frag"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   >
+
+                   <include
+                       android:id="@+id/layout_content"
+                       layout="@layout/content_search" />
+
+                   <RelativeLayout
+                       android:id="@+id/relative_bottom"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/layout_content"
+                       android:background="@drawable/bg_rv_gradient"
+
+                       android:layout_marginTop="@dimen/dimen_20"
+                       android:paddingTop="@dimen/dimen_10"
+                       android:paddingRight="@dimen/dimen_10"
+                       android:paddingLeft="@dimen/dimen_10"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_alignParentRight="true"
+                       >
+                       <RelativeLayout
+                           android:id="@+id/relative_recycle_district"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+
+
+                           android:layout_alignParentTop="true"
+                           android:layout_alignParentStart="true"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_marginHorizontal="@dimen/dimen_5"
+                           android:layout_marginTop="@dimen/dimen_5"
+                           android:layout_marginBottom="@dimen/dimen_20"
+                           >
+                           <androidx.recyclerview.widget.RecyclerView
+                               android:id="@+id/recycler_home_diag_frag"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+
+                               />
+
+                           <androidx.recyclerview.widget.RecyclerView
+                               android:id="@+id/recycler_home_doc_frag"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:visibility="gone"/>
+                       </RelativeLayout>
+                       <TextView
+                           android:id="@+id/text_list_msg"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:visibility="gone"
+                           android:gravity="center"
+                           android:text="@string/app_name"
+                           android:textSize="@dimen/dimen_18"
+                           android:padding="@dimen/dimen_10"
+                           android:textColor="@color/red"
+
+                           android:layout_below="@+id/relative_recycle_district"
+                           />
+
+                       <ProgressBar
+                           android:id="@+id/progress_loading"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:visibility="gone"
+
+                           android:layout_marginTop="@dimen/dimen_10"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_alignParentStart="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_alignParentBottom="true"
+                           />
+                   </RelativeLayout>
+               </RelativeLayout>
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

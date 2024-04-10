@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        android:elevation="@dimen/dimen_4"
+        app:cardCornerRadius="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_stroke"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_msg_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_green"
+                >
+                <LinearLayout
+                    android:id="@+id/linear_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    >
+                    <TextView
+                        android:id="@+id/text_msg_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18"
+                        android:layout_weight="1"
+                        tools:ignore="UnusedAttribute" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_msg_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:paddingHorizontal="@dimen/dimen_5"
+                        android:src="@drawable/ic_delete_forever"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_reply_toast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reply"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_14"
+                    android:paddingHorizontal="@dimen/dimen_5"
+                    android:paddingVertical="@dimen/dimen_10"
+                    android:visibility="gone"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_msg"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_reply_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                android:layout_below="@+id/constraint_msg_card"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:id="@+id/linear_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_msg_reply"
+                    android:padding="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_50"
+                    android:layout_marginStart="@dimen/dimen_50"
+                    android:layout_marginVertical="@dimen/dimen_20"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                   >
+                    <TextView
+                        android:id="@+id/text_reply_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18"
+                        android:layout_weight="1"
+                        tools:ignore="UnusedAttribute" />
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

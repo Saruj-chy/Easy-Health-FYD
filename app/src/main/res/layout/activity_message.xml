@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MessageActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/appbar_message"/>
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dimen_0"
+       android:fillViewport="true"
+       app:layout_constraintTop_toBottomOf="@+id/appbar_message"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       >
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constraint_message"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:visibility="gone"
+                   >
+                   <TextView
+                       android:id="@+id/text_authority"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/message"
+
+
+                       android:textSize="@dimen/dimen_18"
+                       android:textStyle="bold"
+                       android:textAllCaps="false"
+                       android:textColor="?attr/colorPrimary"
+                       android:padding="@dimen/dimen_10"
+                       android:gravity="center"
+
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       />
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:id="@+id/textinput_body"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/dimen_5"
+                       app:layout_constraintTop_toBottomOf="@+id/text_authority"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:id="@+id/edit_body"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:minHeight="@dimen/dimen_200"
+                           />
+
+                   </com.google.android.material.textfield.TextInputLayout>
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/sent"
+                       android:textAllCaps="false"
+                       android:textSize="@dimen/dimen_20"
+                       android:textStyle="bold"
+                       android:layout_marginTop="@dimen/dimen_50"
+                       android:layout_marginHorizontal="@dimen/dimen_30"
+                       android:onClick="onMessageSent"
+
+                       app:layout_constraintTop_toBottomOf="@+id/textinput_body"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       tools:ignore="UsingOnClickInXml" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constraint_msg_list"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   >
+                   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                       android:id="@+id/swipe_refresh"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       >
+                       <androidx.constraintlayout.widget.ConstraintLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+                           <androidx.recyclerview.widget.RecyclerView
+                               android:id="@+id/recycler_message"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:visibility="gone"
+                               android:layout_margin="@dimen/dimen_3"
+                               app:layout_constraintTop_toTopOf="parent"
+                               app:layout_constraintBottom_toBottomOf="parent"
+                               app:layout_constraintStart_toStartOf="parent"
+                               app:layout_constraintEnd_toEndOf="parent"
+
+                               />
+                           <ProgressBar
+                               android:id="@+id/progress"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+
+                               app:layout_constraintTop_toTopOf="parent"
+                               app:layout_constraintBottom_toBottomOf="parent"
+                               app:layout_constraintStart_toStartOf="parent"
+                               app:layout_constraintEnd_toEndOf="parent"
+                               />
+                       </androidx.constraintlayout.widget.ConstraintLayout>
+                   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+               <com.google.android.material.floatingactionbutton.FloatingActionButton
+                   android:id="@+id/fab_message"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="bottom|end"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   android:layout_margin="@dimen/dimen_16"
+                   android:onClick="OnEmailSent"
+                   app:srcCompat="@drawable/ic_add"
+                   tools:ignore="ContentDescription,UsingOnClickInXml,VectorDrawableCompat"
+                    />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </RelativeLayout>
+   </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
